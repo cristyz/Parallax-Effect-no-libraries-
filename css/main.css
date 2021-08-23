@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Poppins, sans-serif;
+}
+
+main {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  background: url("../src/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #title {
+  color: #fff;
+  font-size: 8vw;
+  pointer-events: none;
+  z-index: 1;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+main #travel-1 {
+  left: 0%;
+  top: 10%;
+}
+
+main #travel-2 {
+  left: 60%;
+  top: 20%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main #travel-3 {
+  left: 75%;
+  top: 25%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main #travel-4 {
+  left: 15%;
+  top: 45%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main figure {
+  position: absolute;
+  border: 5px solid #fff;
+  width: 250px;
+  height: 300px;
+  -webkit-transition: .1s;
+  transition: .1s;
+  cursor: pointer;
+}
+
+main figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: 0.1s all ease-in-out, -webkit-filter 1s ease-in-out;
+  transition: 0.1s all ease-in-out, -webkit-filter 1s ease-in-out;
+  transition: 0.1s all ease-in-out, filter 1s ease-in-out;
+  transition: 0.1s all ease-in-out, filter 1s ease-in-out, -webkit-filter 1s ease-in-out;
+}
+
+main figure img:hover {
+  -webkit-filter: contrast(1.2);
+          filter: contrast(1.2);
+}
+
+main figure figcaption {
+  color: #fff;
+  font-size: 1.5vw;
+  text-align: center;
+}
+/*# sourceMappingURL=main.css.map */
